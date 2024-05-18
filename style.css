@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@media (min-width: 860px){
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.main-container {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem {
+    position: absolute;
+}
+
+.fundo {
+    width: 483px;
+    height: 900px;
+}
+
+.card-back {
+    top: 480px;
+    left: 260px;
+}
+
+.card-front {
+    top: 180px;
+    left: 150px;
+}
+
+.right-container {
+    position: relative;
+    text-transform: uppercase;
+    left: 800px;
+    top: 260px;
+    color: hsl(278, 68%, 11%);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.Cardholder-Name {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Cardholder-Number {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.date-cvc {
+    display: flex;
+    flex-direction: row;
+}
+
+.Date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.CVC {
+    margin-right: 980px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Cardholder-Name > input, .Cardholder-Number > input, .input-cartao > input, .CVC > input {
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.Cardholder-Name > input, .Cardholder-Number > input {
+    width: 29%;
+}
+
+.input-cartao > input {
+    width: 40%;
+    margin-right: 10px;
+}
+
+.CVC > input {
+    width: 120%;
+}
+.Cardholder-Name >label, .Cardholder-Number >label, .Date >label ,.CVC >label{
+    margin-bottom: 10px;
+
+}
+
+.btn-login {
+    margin-top: 20px;
+    width: 400px;
+    height: 50px;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-front-container, .card-back-container {
+    position: relative;
+}
+
+.card-details {
+    position: absolute;
+    top: 290px;
+    left: 180px;
+    color: white;
+}
+
+#card-number, #card-name, #card-expiry {
+    margin: 10px 0;
+}
+#card-number{
+    margin-top: 25px;
+    letter-spacing: 4px;
+    font-size: 25px;
+}
+.nome-data{
+    margin-top: 20px;
+    display: flex;
+    gap: 200px;
+
+}
+
+#card-cvc {
+    position: absolute;
+    top: 590px;
+    margin-left: 610px;
+    color: white;
+}
+.simbol{
+    top: 210px;
+    left: 180px;
+
+
+}
+.error{
+    color: hsl(0, 100%, 66%);
+    font-size: 11px;
+    text-transform: none;
+    margin-left: 5px;
+}
+
+}
+
+@media (min-width: 375px) and (max-width: 859px){
+    .main-container {
+        overflow-x: hidden;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        position: relative;
+    }
+    
+    .main-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .right-container{
+        width: 100%;
+        z-index: 3;
+        margin-top: 80px;
+    }
+    .Cardholder-Name > input, .Cardholder-Number > input, .input-cartao > input, .CVC > input {
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    #card-number, #card-name, #card-expiry, #card-cvc{
+        text-transform: uppercase;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        top: 0px;
+    }
+    .simbol{
+        position: absolute;
+        left: 20px;
+        top: 15px;
+    }
+    #card-number{
+        font-size: 30px;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    #card-name{
+        letter-spacing: 3px;
+        font-size: 15px;
+        margin-top: 200px;
+        margin-left: 50px;
+    }
+    #card-expiry{
+        font-size: 15px;
+        margin-top: 200px;
+        margin-left: 350px;
+    }
+    #card-cvc{
+        font-size: 15px;
+        margin-top: 110px;
+        margin-left: 350px;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    .btn-login {
+        margin-top: 20px;
+        width: 400px;
+        height: 50px;
+        color: white;
+        background-color: hsl(278, 68%, 11%);
+        font-size: 15px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .fundo{
+        width: 483px;
+        height: 350px;
+    }
+    .card-front{
+        top: 0;
+    }
+    .left-container, .right-container {
+        position: relative; 
+    }
+    .card-back-container {
+        position: absolute;
+        top: 30px; /* Ajuste conforme necessário */
+        left: 30px; /* Ajuste conforme necessário */
+        z-index: 1;
+    }
+    .card-front-container {
+        position: absolute;
+        top: 190px; /* Ajuste conforme necessário */
+        left: 15px; /* Ajuste conforme necessário */
+        z-index: 2;
+    }
+
+}
